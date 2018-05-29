@@ -6,7 +6,7 @@ const mod = require('../handler.js');
 const mochaPlugin = require('serverless-mocha-plugin');
 const expect = mochaPlugin.chai.expect;
 const lambdaWrapper = mochaPlugin.lambdaWrapper;
-let wrapped = lambdaWrapper.wrap(mod, {handler: 'aida'});
+let wrapped = lambdaWrapper.wrap(mod, {handler: 'Jame'});
 const sinon = require('sinon')
 
 describe('get_passender_details', () => {
@@ -16,7 +16,7 @@ describe('get_passender_details', () => {
 
   it('implement tests here', () => {
     // Stub receiveMessageAsync
-    let stub = sinon.stub(mod,'aida').callsArgWith(1, false, { statusCode: 200, body: JSON.stringify({result: "success"})});
+    let stub = sinon.stub(mod,'Jame').callsArgWith(1, false, { statusCode: 200, body: JSON.stringify({result: "success"})});
     
     // Add all your stubbing stuff here
     //stub.resolves({ message: 'message from SQS' })
