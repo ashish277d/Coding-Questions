@@ -18,5 +18,5 @@ for (let char in chars){
 console.log(max);
 console.log(maxChar);
 }
-maxChars("hello Theeeeeeere 111111")
+maxChars([34,32,32,32,32])
 module.export=maxChars;
